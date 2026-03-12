@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sistemas de seguridad electrónica CCTV, videovigilancia y control de acceso vehicular por Netprotech S.A.S.">
+    
+    <title>Seguridad Electrónica | Netprotech S.A.S.</title>
+    
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+    
+    <!-- Reuse inner page header styles from Infraestructura -->
+    <style>
+        .page-header {
+            padding: 140px 0 80px;
+            background: linear-gradient(135deg, var(--bg-color) 0%, #E2E8F0 100%);
+            position: relative;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .page-header::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; height: 100%;
+            background-image: url('data:image/svg+xml,%3Csvg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%2308559B" fill-opacity="0.05"%3E%3Cpath d="M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');
+            z-index: 0;
+        }
+
+        .page-header h1 {
+            position: relative;
+            z-index: 1;
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+        }
+
+        .page-header p {
+            position: relative;
+            z-index: 1;
+            max-width: 600px;
+            margin: 0 auto;
+            font-size: 1.25rem;
+        }
+
+        .service-details-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+            margin-bottom: var(--spacing-lg);
+        }
+
+        .service-details-grid:nth-child(even) { direction: rtl; }
+        .service-details-grid:nth-child(even) > * { direction: ltr; }
+
+        .detail-img {
+            width: 100%;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-xl);
+            aspect-ratio: 4/3;
+            object-fit: cover;
+            background-color: #CBD5E1; 
+        }
+
+        .detail-content h2 { display: flex; align-items: center; gap: 0.75rem; color: var(--text-dark); }
+        .detail-content h2 i { color: var(--primary-color); padding: 0.5rem; background: rgba(8, 85, 155, 0.1); border-radius: var(--radius-sm); }
+        .detail-content ul { margin-top: 1.5rem; display: grid; gap: 1rem; }
+        .detail-content li { display: flex; align-items: flex-start; gap: 0.75rem; color: var(--text-muted); }
+        .detail-content li i { color: #10B981; margin-top: 0.25rem; }
+
+        @media (max-width: 1024px) {
+            .service-details-grid { grid-template-columns: 1fr; gap: 2rem; }
+            .service-details-grid:nth-child(even) { direction: ltr; }
+            .detail-img { aspect-ratio: 16/9; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar" id="navbar">
+        <div class="container navbar-content">
+            <a href="index.html" class="logo">
+               <img src="assets/images/Logo_Horizontal.svg" alt="Netprotech Logo" style="height: 55px;">
+            </a>
+            
+            <div class="nav-links" id="navLinks">
+                <a href="index.html">Inicio</a>
+                <a href="infraestructura-ti.html">Infraestructura TI</a>
+                <a href="seguridad-electronica.html" class="active">Seguridad Electrónica</a>
+                <a href="soporte-y-desarrollo.html">Soporte y Desarrollo</a>
+                <a href="contacto.html" class="btn btn-primary" style="color: white; border-radius: 999px; padding: 0.5rem 1.25rem;">Contacto</a>
+            </div>
+
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="ti ti-menu-2"></i>
+            </button>
+        </div>
+    </nav>
+
+    <main>
+        <header class="page-header fade-up">
+            <div class="container">
+                <h1>Seguridad Electrónica</h1>
+                <p>Protección perimetral e interna inteligente. Control total sobre quién y qué accede a tus instalaciones físicas.</p>
+            </div>
+        </header>
+
+        <section class="section">
+            <div class="container">
+                
+                <div class="service-details-grid fade-up">
+                    <div class="detail-content">
+                        <h2><i class="ti ti-device-cctv"></i> Videovigilancia (CCTV)</h2>
+                        <p>Desplegamos sistemas de cámaras analógicas de alta definición (HD-TVI/CVI/AHD) e IP (PoE) para monitorear cada ángulo de tu empresa en tiempo real, con grabación redundante y accesible desde cualquier lugar.</p>
+                        <ul>
+                            <li><i class="ti ti-check"></i> Cámaras con analítica de video y visión nocturna en color.</li>
+                            <li><i class="ti ti-check"></i> Almacenamiento local (DVR/NVR) o Cloud (respaldo).</li>
+                            <li><i class="ti ti-check"></i> Centros de monitoreo remoto (VMS corporativo).</li>
+                        </ul>
+                    </div>
+                    <!-- CCTV abstract representation -->
+                    <img src="https://images.unsplash.com/photo-1557597774-9d273605dfa9?auto=format&fit=crop&q=80&w=800" alt="Cámara de vigilancia corporativa" class="detail-img">
+                </div>
+
+                <div class="service-details-grid fade-up stagger-1">
+                    <div class="detail-content">
+                        <h2><i class="ti ti-id-badge-2"></i> Control de Acceso</h2>
+                        <p>Automatizamos y aseguramos las entradas a tus oficinas, bodegas y parqueaderos. Rastrea el movimiento del personal y restringe áreas sensibles con políticas granulares.</p>
+                        <ul>
+                            <li><i class="ti ti-check"></i> Lectores biométricos (Huella, Facial) y tarjetas RFID.</li>
+                            <li><i class="ti ti-check"></i> Talanqueras, torniquetes y cerraduras electromagnéticas.</li>
+                            <li><i class="ti ti-check"></i> Software de gestión de tiempo y asistencia para RR.HH.</li>
+                        </ul>
+                    </div>
+                    <!-- Access Control abstract representation -->
+                    <img src="https://images.unsplash.com/photo-1555529771-7888783a18d3?auto=format&fit=crop&q=80&w=800" alt="Lector de huella de control de acceso" class="detail-img">
+                </div>
+
+                <div class="service-details-grid fade-up stagger-2">
+                    <div class="detail-content">
+                        <h2><i class="ti ti-fence"></i> Cercos Eléctricos y Perimetrales</h2>
+                        <p>Diseñamos, instalamos y certificamos sistemas de cerco eléctrico perimetral para disuadir e impedir intrusiones en instalaciones industriales, bodegas y conjuntos residenciales. Conectados a paneles de alarma para respuesta inmediata.</p>
+                        <ul>
+                            <li><i class="ti ti-check"></i> Electrificadores de alta potencia certificados (normativa local).</li>
+                            <li><i class="ti ti-check"></i> Integración con alarmas sonoras e iluminación estroboscópica.</li>
+                            <li><i class="ti ti-check"></i> Mantenimiento de voltaje, aisladores y sensores de flexión.</li>
+                        </ul>
+                    </div>
+                    <!-- Electric Fence representation -->
+                    <img src="https://images.unsplash.com/photo-1544026361-26786cc7a32d?auto=format&fit=crop&q=80&w=800" alt="Instalación de cerco eléctrico de alta seguridad" class="detail-img">
+                </div>
+
+            </div>
+        </section>
+
+        <section class="section" style="padding-top: 0;">
+            <div class="container text-center fade-up">
+                <div style="background: rgba(8, 85, 155, 0.05); padding: 4rem 2rem; border-radius: var(--radius-lg); border: 1px solid rgba(8, 85, 155, 0.1);">
+                    <h2 style="color: var(--text-dark);">El riesgo real de no estar protegido</h2>
+                    <p style="max-width: 600px; margin: 0 auto 2rem;">Contar con evidencia visual y trazabilidad física es obligatorio para empresas comerciales.</p>
+                    <a href="contacto.html" class="btn btn-primary">Cotizar Seguridad</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="#" class="logo" style="margin-bottom: 1.5rem; display: inline-block;">
+                        <img src="assets/images/Logo_Horizontal.svg" alt="Netprotech Logo" style="height: 70px; filter: brightness(0) invert(1);">
+                    </a>
+                    <p>Conectamos y protegemos tu negocio con soluciones tecnológicas integrales corporativas.</p>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Servicios</h4>
+                    <a href="infraestructura-ti.html">Redes y Cableado</a>
+                    <a href="seguridad-electronica.html">CCTV y Acceso</a>
+                    <a href="soporte-y-desarrollo.html">Soporte IT</a>
+                    <a href="soporte-y-desarrollo.html">Desarrollo Web</a>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Enlace Rápido</h4>
+                    <a href="index.html">Inicio</a>
+                    <a href="contacto.html">Contacto</a>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Contacto Oficial</h4>
+                    <p><i class="ti ti-mail"></i> netprotechsas@gmail.com</p>
+                    <p><i class="ti ti-phone"></i> +57 310 867-9120</p>
+                    <!-- <p><i class="ti ti-map-pin"></i> CL 152 NO. 56-72 TO 10 AP 303<br>Bogotá D.C., Colombia</p> -->
+                    <p><i class="ti ti-building-bank"></i> NIT: 901967653-8</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 NETPROTECH SAS. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/573108679120" target="_blank" class="whatsapp-float" aria-label="Contactar por WhatsApp">
+        <i class="ti ti-brand-whatsapp"></i>
+    </a>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

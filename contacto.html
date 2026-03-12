@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contacta a Netprotech S.A.S. en Bogotá para cotizar servicios de soporte IT, redes, seguridad electrónica y desarrollo.">
+    
+    <title>Contacto | Netprotech S.A.S.</title>
+    
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+    
+    <style>
+        .page-header {
+            padding: 140px 0 80px;
+            background: linear-gradient(135deg, var(--bg-color) 0%, #E2E8F0 100%);
+            position: relative;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .page-header h1 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.2fr;
+            gap: 4rem;
+        }
+
+        .contact-info-card {
+            background: var(--primary-color);
+            color: white;
+            padding: 3rem;
+            border-radius: var(--radius-lg);
+            position: relative;
+            overflow: hidden;
+            box-shadow: var(--shadow-xl);
+        }
+
+        .contact-info-card::after {
+            content: '';
+            position: absolute;
+            bottom: -50px;
+            right: -50px;
+            width: 250px;
+            height: 250px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+        }
+
+        .contact-info-card h3 {
+            color: white;
+            font-size: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .contact-item i {
+            font-size: 1.5rem;
+            color: rgba(255, 255, 255, 0.8);
+            margin-top: 0.25rem;
+        }
+
+        .contact-item h4 {
+            color: white;
+            font-size: 1.125rem;
+            margin-bottom: 0.25rem;
+        }
+
+        .contact-item p {
+            color: rgba(255, 255, 255, 0.8);
+            margin-bottom: 0;
+        }
+
+        /* Modern Form Styling */
+        .contact-form-container {
+            background: var(--surface-color);
+            padding: 3rem;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-md);
+            border: 1px solid var(--glass-border);
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+            position: relative;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: var(--text-dark);
+            font-weight: 500;
+            font-size: 0.875rem;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 1rem 1.25rem;
+            border: 1px solid #CBD5E1; /* Slate 300 */
+            border-radius: var(--radius-sm);
+            background: #F1F5F9; /* Slate 100 */
+            color: var(--text-dark);
+            font-family: inherit;
+            font-size: 1rem;
+            transition: all var(--transition-fast);
+        }
+
+        .form-control:focus {
+            outline: none;
+            border-color: var(--primary-color);
+            background: white;
+            box-shadow: 0 0 0 3px rgba(8, 85, 155, 0.1);
+        }
+
+        textarea.form-control {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        @media (max-width: 992px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+            .contact-info-card {
+                padding: 2rem;
+            }
+            .contact-form-container {
+                padding: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar" id="navbar">
+        <div class="container navbar-content">
+            <a href="index.html" class="logo">
+               <img src="assets/images/Logo_Horizontal.svg" alt="Netprotech Logo" style="height: 55px;">
+            </a>
+            
+            <div class="nav-links" id="navLinks">
+                <a href="index.html">Inicio</a>
+                <a href="infraestructura-ti.html">Infraestructura TI</a>
+                <a href="seguridad-electronica.html">Seguridad Electrónica</a>
+                <a href="soporte-y-desarrollo.html">Soporte y Desarrollo</a>
+                <a href="contacto.html" class="active btn btn-primary" style="color: white; border-radius: 999px; padding: 0.5rem 1.25rem;">Contacto</a>
+            </div>
+
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="ti ti-menu-2"></i>
+            </button>
+        </div>
+    </nav>
+
+    <main>
+        <header class="page-header fade-up">
+            <div class="container">
+                <h1>Contacto</h1>
+                <p>Estás a un paso de estructurar el futuro tecnológico de tu empresa. Escríbenos.</p>
+            </div>
+        </header>
+
+        <section class="section">
+            <div class="container contact-grid">
+                
+                <!-- Info Column -->
+                <div class="contact-info-card fade-up">
+                    <h3>Información Corporativa</h3>
+                    
+                    <div class="contact-item">
+                        <i class="ti ti-building"></i>
+                        <div>
+                            <h4>Razón Social</h4>
+                            <p>NETPROTECH SAS</p>
+                            <p style="font-size: 0.875rem; opacity: 0.7;">NIT: 901967653-8</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <i class="ti ti-map-pin"></i>
+                        <div>
+                            <h4>Sede de Operaciones</h4>
+                            <!-- <p>CL 152 NO. 56-72 TO 10 AP 303</p> -->
+                            <p>Bogotá D.C., Colombia</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <i class="ti ti-mail"></i>
+                        <div>
+                            <h4>Email de Contacto</h4>
+                            <p><a href="mailto:netprotechsas@gmail.com" style="color: white; text-decoration: underline;">netprotechsas@gmail.com</a></p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <i class="ti ti-phone"></i>
+                        <div>
+                            <h4>Atención Directa</h4>
+                            <p>+57 310 867-9120</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <i class="ti ti-clock"></i>
+                        <div>
+                            <h4>Horario de Atención</h4>
+                            <p>Lunes a Viernes</p>
+                            <p>9:00 AM - 6:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Form Column -->
+                <div class="contact-form-container fade-up stagger-1">
+                    <h2 style="font-size: 1.5rem; margin-bottom: 0.5rem;">Envíanos un mensaje</h2>
+                    <p style="margin-bottom: 2rem;">Completa el formulario y un asesor técnico se comunicará contigo a la brevedad.</p>
+                    
+                    <form action="#" method="POST" onsubmit="event.preventDefault(); alert('Formulario demo enviado con éxito. Integra con tu backend favorito.');">
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                            <div class="form-group">
+                                <label for="name">Nombre Completo *</label>
+                                <input type="text" id="name" name="name" class="form-control" required placeholder="Ej. Juan Pérez">
+                            </div>
+                            <div class="form-group">
+                                <label for="company">Empresa</label>
+                                <input type="text" id="company" name="company" class="form-control" placeholder="Ej. ACME Corp">
+                            </div>
+                        </div>
+
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                            <div class="form-group">
+                                <label for="email">Correo Electrónico *</label>
+                                <input type="email" id="email" name="email" class="form-control" required placeholder="tu@empresa.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Teléfono / Celular (Opcional)</label>
+                                <input type="tel" id="phone" name="phone" class="form-control" placeholder="+57 300 000 0000">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="service">Servicio de Interés</label>
+                            <select id="service" name="service" class="form-control">
+                                <option value="redes">Infraestructura y Redes</option>
+                                <option value="cctv">Seguridad Electrónica (CCTV y Acceso)</option>
+                                <option value="soporte">Soporte IT Corporativo</option>
+                                <option value="web">Desarrollo Web / Nube</option>
+                                <option value="otro">Otro</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Mensaje *</label>
+                            <textarea id="message" name="message" class="form-control" required placeholder="Cuéntanos brevemente qué necesitas resolver..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary" style="width: 100%; border-radius: var(--radius-sm); padding: 1.25rem;">Enviar Solicitud <i class="ti ti-send"></i></button>
+                    </form>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="#" class="logo" style="margin-bottom: 1.5rem; display: inline-block;">
+                        <img src="assets/images/Logo_Horizontal.svg" alt="Netprotech Logo" style="height: 70px; filter: brightness(0) invert(1);">
+                    </a>
+                    <p>Conectamos y protegemos tu negocio con soluciones tecnológicas integrales corporativas.</p>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Servicios</h4>
+                    <a href="infraestructura-ti.html">Redes y Cableado</a>
+                    <a href="seguridad-electronica.html">CCTV y Acceso</a>
+                    <a href="soporte-y-desarrollo.html">Soporte IT</a>
+                    <a href="soporte-y-desarrollo.html">Desarrollo Web</a>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Enlace Rápido</h4>
+                    <a href="index.html">Inicio</a>
+                    <a href="contacto.html">Contacto</a>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Contacto Oficial</h4>
+                    <p><i class="ti ti-mail"></i> netprotechsas@gmail.com</p>
+                    <p><i class="ti ti-phone"></i> +57 310 867-9120</p>
+                    <!-- <p><i class="ti ti-map-pin"></i> CL 152 NO. 56-72 TO 10 AP 303<br>Bogotá D.C., Colombia</p> -->
+                    <p><i class="ti ti-building-bank"></i> NIT: 901967653-8</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 NETPROTECH SAS. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/573108679120" target="_blank" class="whatsapp-float" aria-label="Contactar por WhatsApp">
+        <i class="ti ti-brand-whatsapp"></i>
+    </a>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

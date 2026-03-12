@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Servicios de Infraestructura TI por Netprotech: Redes, cableado estructurado, servidores y energía bajo normativas internacionales.">
+    
+    <title>Infraestructura TI | Netprotech S.A.S.</title>
+    
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+    
+    <style>
+        /* Inner Page Header */
+        .page-header {
+            padding: 140px 0 80px;
+            background: linear-gradient(135deg, var(--bg-color) 0%, #E2E8F0 100%);
+            position: relative;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .page-header::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; height: 100%;
+            background-image: url('data:image/svg+xml,%3Csvg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%2308559B" fill-opacity="0.05"%3E%3Cpath d="M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');
+            z-index: 0;
+        }
+
+        .page-header h1 {
+            position: relative;
+            z-index: 1;
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+        }
+
+        .page-header p {
+            position: relative;
+            z-index: 1;
+            max-width: 600px;
+            margin: 0 auto;
+            font-size: 1.25rem;
+        }
+
+        /* Content Grid */
+        .service-details-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+            margin-bottom: var(--spacing-lg);
+        }
+
+        .service-details-grid:nth-child(even) {
+            direction: rtl;
+        }
+        
+        .service-details-grid:nth-child(even) > * {
+            direction: ltr;
+        }
+
+        .detail-img {
+            width: 100%;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-xl);
+            aspect-ratio: 4/3;
+            object-fit: cover;
+            background-color: #CBD5E1; 
+        }
+
+        .detail-content h2 {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            color: var(--text-dark);
+        }
+        
+        .detail-content h2 i {
+            color: var(--primary-color);
+            padding: 0.5rem;
+            background: rgba(8, 85, 155, 0.1);
+            border-radius: var(--radius-sm);
+        }
+
+        .detail-content ul {
+            margin-top: 1.5rem;
+            display: grid;
+            gap: 1rem;
+        }
+
+        .detail-content li {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+            color: var(--text-muted);
+        }
+
+        .detail-content li i {
+            color: #10B981;
+            margin-top: 0.25rem;
+        }
+
+        @media (max-width: 1024px) {
+            .service-details-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            .service-details-grid:nth-child(even) {
+                direction: ltr;
+            }
+            .detail-img {
+                aspect-ratio: 16/9;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container navbar-content">
+            <a href="index.html" class="logo">
+               <img src="assets/images/Logo_Horizontal.svg" alt="Netprotech Logo" style="height: 55px;">
+            </a>
+            
+            <div class="nav-links" id="navLinks">
+                <a href="index.html">Inicio</a>
+                <a href="infraestructura-ti.html" class="active">Infraestructura TI</a>
+                <a href="seguridad-electronica.html">Seguridad Electrónica</a>
+                <a href="soporte-y-desarrollo.html">Soporte y Desarrollo</a>
+                <a href="contacto.html" class="btn btn-primary" style="color: white; border-radius: 999px; padding: 0.5rem 1.25rem;">Contacto</a>
+            </div>
+
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="ti ti-menu-2"></i>
+            </button>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Header -->
+        <header class="page-header fade-up">
+            <div class="container">
+                <h1>Infraestructura TI</h1>
+                <p>Las bases sólidas que permiten a tu empresa escalar, comunicar operaciones y procesar datos sin interrupciones.</p>
+            </div>
+        </header>
+
+        <!-- Services Content -->
+        <section class="section">
+            <div class="container">
+                
+                <!-- Service 1: Redes y Servidores -->
+                <div class="service-details-grid fade-up">
+                    <div class="detail-content">
+                        <h2><i class="ti ti-server"></i> Redes y Servidores</h2>
+                        <p>Diseñamos e implementamos arquitecturas de red empresariales (LAN/WAN) optimizadas para alta disponibilidad. Nos encargamos del aprovisionamiento de servidores on-premise, virtualización y configuración de equipos de borde (Routers, Switches, Firewalls).</p>
+                        <ul>
+                            <li><i class="ti ti-check"></i> Redes cableadas e inalámbricas (Wi-Fi corporativo) seguras.</li>
+                            <li><i class="ti ti-check"></i> Virtualización de servidores (Hyper-V / VMware).</li>
+                            <li><i class="ti ti-check"></i> Segmentación y políticas de QoS (Calidad de Servicio).</li>
+                        </ul>
+                    </div>
+                    <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&q=80&w=800" alt="Cuarto de servidores corporativo" class="detail-img">
+                </div>
+
+                <!-- Service 2: Cableado Estructurado -->
+                <div class="service-details-grid fade-up stagger-1">
+                    <div class="detail-content">
+                        <h2><i class="ti ti-vector"></i> Cableado Estructurado</h2>
+                        <p>Realizamos el diseño y montaje de sistemas de cableado (Voz, Datos y Video) siguiendo estándares internacionales (EIA/TIA, ISO). Garantizamos la integridad de la señal y la escalabilidad física de tu centro de datos u oficina.</p>
+                        <ul>
+                            <li><i class="ti ti-check"></i> Instalación en Cobre (Cat6, Cat6A) y Fibra Óptica.</li>
+                            <li><i class="ti ti-check"></i> Organización y peinado de gabinetes y racks de comunicaciones.</li>
+                            <li><i class="ti ti-check"></i> Certificación de puntos de red.</li>
+                        </ul>
+                    </div>
+                    <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&q=80&w=800" alt="Técnico conectando cableado estructurado" class="detail-img">
+                </div>
+
+                <!-- Service 3: Alambrado Eléctrico -->
+                <div class="service-details-grid fade-up stagger-2">
+                    <div class="detail-content">
+                        <h2><i class="ti ti-bolt"></i> Energía Regulada y Normal</h2>
+                        <p>Comprendemos que la infraestructura de datos no existe sin una matriz eléctrica estable. Proveemos soluciones de energía ininterrumpida y cableado eléctrico bajo normativa RETIE.</p>
+                        <ul>
+                            <li><i class="ti ti-check"></i> Dimensionamiento e instalación de UPS e inversores.</li>
+                            <li><i class="ti ti-check"></i> Redes eléctricas normales y reguladas para estaciones IT.</li>
+                            <li><i class="ti ti-check"></i> Diseño e instalación de mallas y sistemas de puesta a tierra.</li>
+                        </ul>
+                    </div>
+                    <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&q=80&w=800" alt="Ingeniero en cuadro eléctrico" class="detail-img">
+                </div>
+
+            </div>
+        </section>
+
+        <!-- CTA -->
+         <section class="section" style="padding-top: 0;">
+            <div class="container text-center fade-up">
+                <div style="background: rgba(8, 85, 155, 0.05); padding: 4rem 2rem; border-radius: var(--radius-lg); border: 1px solid rgba(8, 85, 155, 0.1);">
+                    <h2 style="color: var(--text-dark);">¿Tu infraestructura actual frena tu crecimiento?</h2>
+                    <p style="max-width: 600px; margin: 0 auto 2rem;">Realizamos una auditoría técnica completa de tus instalaciones para encontrar cuellos de botella y vulnerabilidades de red.</p>
+                    <a href="contacto.html" class="btn btn-primary">Solicitar Auditoría IT</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="#" class="logo" style="margin-bottom: 1.5rem; display: inline-block;">
+                        <img src="assets/images/Logo_Horizontal.svg" alt="Netprotech Logo" style="height: 70px; filter: brightness(0) invert(1);">
+                    </a>
+                    <p>Conectamos y protegemos tu negocio con soluciones tecnológicas integrales corporativas.</p>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Servicios</h4>
+                    <a href="infraestructura-ti.html">Redes y Cableado</a>
+                    <a href="seguridad-electronica.html">CCTV y Acceso</a>
+                    <a href="soporte-y-desarrollo.html">Soporte IT</a>
+                    <a href="soporte-y-desarrollo.html">Desarrollo Web</a>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Enlace Rápido</h4>
+                    <a href="index.html">Inicio</a>
+                    <a href="contacto.html">Contacto</a>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Contacto Oficial</h4>
+                    <p><i class="ti ti-mail"></i> netprotechsas@gmail.com</p>
+                    <p><i class="ti ti-phone"></i> +57 310 867-9120</p>
+                    <!-- <p><i class="ti ti-map-pin"></i> CL 152 NO. 56-72 TO 10 AP 303<br>Bogotá D.C., Colombia</p> -->
+                    <p><i class="ti ti-building-bank"></i> NIT: 901967653-8</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 NETPROTECH SAS. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/573108679120" target="_blank" class="whatsapp-float" aria-label="Contactar por WhatsApp">
+        <i class="ti ti-brand-whatsapp"></i>
+    </a>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
