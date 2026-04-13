@@ -363,40 +363,4 @@ img {
 .stagger-3 { transition-delay: 0.3s; }
 .stagger-4 { transition-delay: 0.4s; }
 
-/* --- Comodato Banner --- */
-.comodato-banner {
-  background: linear-gradient(135deg, var(--bg-color), #E2E8F0);
-  border-radius: var(--radius-lg);
-  padding: 3rem;
-  border: 1px solid rgba(8, 85, 155, 0.1);
-  display: grid;
-  grid-template-columns: 1fr auto;
-  gap: 3rem;
-  align-items: center;
-  box-shadow: var(--shadow-lg);
-  margin-bottom: var(--spacing-xl);
-}
 
-.comodato-banner-content h2 { margin-bottom: 1rem; }
-.comodato-banner-list { display: grid; gap: 0.75rem; color: var(--text-muted); margin-bottom: 2rem; }
-.comodato-banner-list li { display: flex; gap: 0.5rem; align-items: flex-start; }
-
-.comodato-banner-cta {
-  text-align: center;
-  border-left: 1px solid rgba(0,0,0,0.1);
-  padding-left: 3rem;
-}
-
-@media (max-width: 768px) {
-  .comodato-banner {
-    grid-template-columns: 1fr;
-    gap: 2rem;
-    padding: 2rem;
-  }
-  .comodato-banner-cta {
-    border-left: none;
-    border-top: 1px solid rgba(0,0,0,0.1);
-    padding-left: 0;
-    padding-top: 2rem;
-  }
-}
